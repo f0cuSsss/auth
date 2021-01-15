@@ -2,7 +2,11 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send({ request: req })
+    res.send({ msg: 'Hello there! :)' })
+})
+
+app.get('/users', (req, res) => {
+    res.send({ users: 'users...' })
 })
 
 app.get('/user/id=:id', (req, res) => {
@@ -10,4 +14,4 @@ app.get('/user/id=:id', (req, res) => {
 })
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT);
+app.listen(PORT); 
