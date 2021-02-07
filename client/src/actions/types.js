@@ -1,0 +1,4 @@
+export const LOG_IN = 'LOG_IN'
+export const REGISTER = 'REGISTER'
+export const GET_CURRENT_AUTH_USER = 'GET_CURRENT_AUTH_USER'
+export const GET_PROFILE_DATA = 'GET_PROFILE_DATA'

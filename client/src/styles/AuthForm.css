@@ -1,0 +1,13 @@
+.auth-form {
+  padding: 50px 50px 25px 50px;
+}
+
+.action__button-auth {
+  margin-top: -15px;
+  transition: background-color 0.3s ease-in;
+}
+
+.action__button-auth:hover {
+  background-color: rgb(38, 143, 117);
+  transition: background-color 0.3s ease-in;
+}

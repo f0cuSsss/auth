@@ -1,0 +1,84 @@
+header {
+  background-color: #bbb1d6;
+  height: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.header__homepage img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease-in;
+}
+
+.header__homepage:hover img {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in;
+}
+
+.header__button button {
+  align-self: flex-end;
+  padding: 5px 7px;
+  background: #68ae7c;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  transition: background, color 0.3s ease-in;
+  transition: transform 0.2s ease-in;
+}
+
+.header__button button:hover {
+  background: #587260;
+  color: #fff;
+  transform: translateY(-1px);
+  transition: transform 0.2s ease-in;
+  transition: background, color 0.3s ease-in;
+}
+
+.header__button + .header__button {
+  margin-left: 5px;
+}
+
+.sign-in__btn button {
+}
+
+.header__right-side {
+  display: flex;
+  flex-flow: row;
+}
+
+.sign-in__btn button:hover {
+}
+
+.join-free__btn button {
+}
+
+.join-free__btn button:hover {
+}
+
+.header__profile--logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgb(163, 163, 163);
+  overflow: hidden;
+  transition: transform 0.2s ease-in;
+}
+
+.header__profile--logo:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: transform 0.2s ease-in;
+}
+
+.header__profile--logo img {
+  width: 30px;
+  height: 30px;
+}

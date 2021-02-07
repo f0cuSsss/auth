@@ -10,6 +10,14 @@ const googleUserSchema = new Schema({
 
 mongoose.model('google_users', googleUserSchema);
 
+const facebookUserSchema = new Schema({
+    facebookId: String,
+    firstName: String,
+    secondName: String,
+    dob: Date
+});
+
+mongoose.model('facebook_users', facebookUserSchema);
 
 const lpUserSchema = new Schema({
     id: String,
@@ -20,5 +28,10 @@ const lpUserSchema = new Schema({
     secondName: String,
     dob: Date
 });
+
+lpUserSchema.methods.validPassword = () => {
+
+    return true;
+}
 
 mongoose.model('users', lpUserSchema);

@@ -1,0 +1,13 @@
+.reg-form {
+  padding: 40px 50px 25px 50px;
+}
+
+.action__button-register {
+  margin-top: -15px;
+  transition: background-color 0.3s ease-in;
+}
+
+.action__button-register:hover {
+  background-color: rgb(38, 143, 117);
+  transition: background-color 0.3s ease-in;
+}

@@ -1,0 +1,159 @@
+.form {
+  background-color: #003516;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 1px #0000005e;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.scroll {
+  height: auto;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 0px;
+}
+
+.row {
+  margin: 5px;
+  text-align: center;
+  color: white;
+}
+
+.row > span {
+  font-size: 12px;
+}
+
+.input-block {
+  padding-bottom: 30px;
+}
+
+.input-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+}
+
+.input__error-message {
+  margin-top: 7px;
+  color: rgb(255, 87, 87);
+  font-size: 14px;
+  font-weight: 500;
+  text-align: start;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 7px;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.idcard {
+  background: url("../images/icons/idcard-icon.svg");
+}
+
+.profile {
+  background: url("../images/icons/profile_icon.svg");
+}
+
+.lock {
+  background: url("../images/icons/lock_icon.svg");
+}
+
+.email {
+  background: url("../images/icons/email-icon.svg");
+}
+
+.google-logo {
+  background: url("../images/icons/google-icon.svg");
+}
+
+.facebook-logo {
+  background: url("../images/icons/facebook-icon.svg");
+}
+
+.input-block input {
+  padding: 5px 7px;
+  width: calc(100% - 25px - 25px);
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(172, 172, 172);
+  color: #fff;
+  outline: none;
+}
+
+.action__title {
+  font-size: 24px;
+  color: rgb(233, 233, 233);
+  font-weight: 600;
+  letter-spacing: 5px;
+  margin: 15px;
+}
+
+.action__title--main {
+  font-size: 28px;
+  margin: 25px 10px;
+}
+
+.action__button {
+  background-color: rgb(57, 180, 149);
+  border: none;
+  border-radius: 4px;
+  color: rgb(238, 238, 238);
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  width: 220px;
+  height: 30px;
+}
+
+.action__button--main {
+  height: 40px !important;
+}
+
+action__button:disabled,
+action__button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.action__button-child {
+  margin-top: 1px !important;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in;
+}
+
+.action__button-child:hover {
+  background-color: rgb(0, 117, 39) !important;
+  transition: background-color 0.3s ease-in;
+}
+
+.actions__block {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.action {
+  width: 25px;
+  height: 25px;
+  margin: 0 7px;
+  transition: transform 0.3s ease-in;
+}
+
+.action:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.1s ease-in;
+}
